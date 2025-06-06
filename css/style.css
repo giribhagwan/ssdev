@@ -1732,7 +1732,7 @@ padding-top: 2px;
 }
 
  
-.box-area:before {
+/*.box-area:before {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -1771,7 +1771,7 @@ padding-top: 2px;
     -webkit-transform: skewY(-3deg);
     transform: skewY(-11deg);
     background-size: cover;
-}
+}*/
 .box-area h3 {
     margin-top: -16px;
     z-index: 12;
@@ -2251,10 +2251,14 @@ padding:50px 0
       max-width: 220px;
     }
     
-    .navbar-toggle {
-      border: 1px solid #ddd;
-      background-color: transparent;
-    }
+   .navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #333;
+  margin: 4px 0;
+  border-radius: 1px;
+}
     
     .navbar-toggle .icon-bar {
       background-color: #333;
@@ -2572,4 +2576,37 @@ padding:50px 0
         margin-top: 20px;
       }
     }
-  
+/* Stack event-table buttons in a column on small screens */
+@media (max-width: 767px) {
+  .event-table tr,
+  .event-table td {
+    display: block;
+    width: 100%;
+  }
+  .event-table .button-cell {
+    margin-bottom: 18px;
+    text-align: center;
+  }
+  .event-table .label {
+    margin-top: 10px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  .event-table {
+    border-spacing: 0 12px;
+  }
+}
+.event-table .button-cell {
+  padding-bottom: 18px;
+}
+/* Add to your style.css or inside a <style> tag in <head> */
+.event-details {
+  display: inline-block;
+  text-align: left;
+  max-width: 600px;
+}
+@media (max-width: 767px) {
+  .event-details {
+    max-width: 100%;
+  }
+}
