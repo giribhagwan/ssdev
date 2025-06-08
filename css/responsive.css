@@ -290,3 +290,12 @@ body {
   display: inline-block;
   color: #007bff; /* Or your theme color */
 }
+.modern-course-btn {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.modern-course-btn:hover {
+    text-decoration: none;
+}
