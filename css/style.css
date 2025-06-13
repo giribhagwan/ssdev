@@ -2610,3 +2610,22 @@ padding:50px 0
     max-width: 100%;
   }
 }
+.event-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.event-card ul li {
+    margin-bottom: 8px;
+    padding-left: 5px;
+}
+
+.event-card .event-details {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+}
