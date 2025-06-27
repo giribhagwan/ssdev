@@ -2775,3 +2775,154 @@ padding:50px 0
         flex-direction: column;
     }
 }
+.announcement-banner {
+  position: relative;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  padding: 20px 10px 20px 60px;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(102,126,234,0.10);
+  overflow: hidden;
+  margin-bottom: 0;
+  animation: slideInBanner 1s cubic-bezier(.77,0,.18,1) 0s 1;
+}
+@keyframes slideInBanner {
+  from { transform: translateY(-100%); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+.announcement-banner .fa-bolt {
+    position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.2rem;
+  color: #ffd700;
+  animation: pulse 1.2s infinite alternate;
+}
+@keyframes pulse {
+  0% { text-shadow: 0 0 0 #ffd700; }
+  100% { text-shadow: 0 0 16px #ffd700; }
+}
+.announcement-banner .enroll-btn {
+  display: inline-block;
+  margin-left: 18px;
+  background: #ffd700;
+  color: #4b367c;
+  font-weight: bold;
+  padding: 8px 22px;
+  border-radius: 24px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  border: none;
+  font-size: 1rem;
+}
+.announcement-banner .enroll-btn:hover, .announcement-banner .enroll-btn:focus {
+  background: #fff;
+  color: #764ba2;
+  box-shadow: 0 4px 16px rgba(118,75,162,0.18);
+  text-decoration: none;
+}
+.announcement-banner .close-banner {
+  position: absolute;
+  right: 18px;
+  top: 14px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.announcement-banner .close-banner:hover {
+  opacity: 1;
+}
+@media (max-width: 600px) {
+  .announcement-banner {
+    font-size: 1rem;
+    padding: 16px 10px 16px 44px;
+  }
+    .announcement-banner .fa-bolt {
+    left: 10px;
+    font-size: 1.4rem;
+  }
+  .announcement-banner .enroll-btn {
+    margin-top: 10px;
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@keyframes twinkle {
+  0% { opacity: 1; text-shadow: 0 0 8px #ffd700, 0 0 16px #fff200; }
+  100% { opacity: 0.6; text-shadow: 0 0 2px #ffd700, 0 0 4px #fff200; }
+}
+.announcement-banner {
+  font-size: 1.35em; /* Increase overall text size */
+  padding: 14px 18px;
+}
+.announcement-banner b,
+.announcement-banner span,
+.announcement-banner a {
+  font-size: 1.1em; /* Make bold, span, and link text larger */
+}
+.badge-new {
+  background: #ffd700;
+  color: #222;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.95em;
+  display: inline-block;
+  animation: twinkle 1s infinite alternate;
+  vertical-align: middle;
+  margin-left: 8px;
+  margin-bottom: 0;
+}
+@keyframes twinkle {
+  0% { box-shadow: 0 0 8px #ffd700; }
+  100% { box-shadow: 0 0 2px #ffd700; }
+}
+.textbox.java-highlight {
+  border: 2px solid #ffd700;
+  box-shadow: 0 0 16px #ffe066;
+  position: relative;
+  z-index: 2;
+  padding-top: 12px; /* Reduce top padding if needed */
+}
+.btn-attract {
+  background: linear-gradient(90deg, #ffd700 60%, #ff9800 100%);
+  color: #222 !important;
+  font-weight: bold;
+  border-radius: 24px;
+  padding: 10px 28px;
+  font-size: 1.1em;
+  box-shadow: 0 4px 16px #ffe06680;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-attract:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 24px #ffd700b0;
+}
+.countdown-timer {
+  margin: 12px 0 0 0;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #e67e22;
+  background: #fffbe6;
+  border-radius: 8px;
+  padding: 6px 14px;
+  display: inline-block;
+  box-shadow: 0 2px 8px #ffe06640;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.countdown-timer .count-label {
+  color: #b36b00;
+  margin-right: 6px;
+}
