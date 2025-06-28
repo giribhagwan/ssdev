@@ -247,3 +247,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Countdown to 1st July 2025
+(function() {
+  var countdownElem = document.getElementById('javaCountdownValue');
+  if (!countdownElem) return;
+  var launchDate = new Date('2025-07-01T00:00:00+05:30'); // Adjust timezone if needed
+
+  function updateCountdown() {
+    var now = new Date();
+    var diff = launchDate - now;
+    if (diff <= 0) {
+      countdownElem.textContent = "Launched!";
+      return;
+    }
+    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    var mins = Math.floor((diff / (1000 * 60)) % 60);
+    var secs = Math.floor((diff / 1000) % 60);
+    countdownElem.textContent =
+      days + "d " + hours + "h " + mins + "m " + secs + "s";
+    setTimeout(updateCountdown, 1000);
+  }
+  updateCountdown();
+})();
+document.addEventListener('DOMContentLoaded', () => {
+      AOS.init({ once: true });
+    });
