@@ -2932,3 +2932,34 @@ body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
       80% { transform: scale(1.05); opacity: 1; }
       100% { transform: scale(1); }
     }
+.free-session-highlight {
+    background: linear-gradient(90deg, #fffbe7 60%, #ffe0b2 100%);
+    border-left: 6px solid #ff9800;
+    border-radius: 12px;
+    padding: 18px 18px 12px 18px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 12px rgba(255, 152, 0, 0.08);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.free-session-header .live-badge {
+    background: #ff9800;
+    color: #fff;
+    font-weight: 700;
+    padding: 5px 16px;
+    border-radius: 20px;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(255,152,0,0.10);
+}
+.free-session-details {
+    color: #2c3e50;
+    font-size: 1.08em;
+    margin-top: 6px;
+}
+.free-session-details .session-topic b {
+    color: #007bff;
+}
