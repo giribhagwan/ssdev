@@ -2927,3 +2927,8 @@ padding:50px 0
   margin-right: 6px;
 }
 body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+@keyframes popIn {
+      0% { transform: scale(0.7); opacity: 0; }
+      80% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); }
+    }
