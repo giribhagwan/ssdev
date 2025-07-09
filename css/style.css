@@ -3131,3 +3131,16 @@ body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
   from { transform: translateY(-40px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
+.btn-attract {
+  background: linear-gradient(to right, #ffcc00, #ff9900);
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: #000;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+.btn-attract:hover {
+  filter: brightness(1.1);
+}
