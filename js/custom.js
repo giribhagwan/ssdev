@@ -274,3 +274,46 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', () => {
       AOS.init({ once: true });
     });
+function openModal() {
+    document.getElementById("notifyModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("notifyModal").style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    const modal = document.getElementById("notifyModal");
+    if (event.target == modal) {
+      closeModal();
+    }
+  };
+function openModal() {
+    document.getElementById("notifyModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("notifyModal").style.display = "none";
+  }
+
+  function showToast(message) {
+    const toast = document.getElementById("toast");
+    toast.textContent = message;
+    toast.classList.add("show");
+    setTimeout(() => toast.classList.remove("show"), 3000);
+  }
+
+  // Optional: Detect form submit based on redirect or iframe load
+  const iframe = document.getElementById("googleForm");
+  iframe.onload = function () {
+    if (iframe.src.includes("formResponse")) {
+      closeModal();
+      showToast("✅ Response submitted!");
+    }
+  };
+
+  window.onclick = function (event) {
+    if (event.target == document.getElementById("notifyModal")) {
+      closeModal();
+    }
+  };

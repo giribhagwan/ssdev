@@ -122,14 +122,31 @@
         </div>
     </div>
     <div class="col-md-4">
-        <div class="textbox" itemscope itemtype="http://schema.org/Course">
-            <h3 itemprop="name">Python with GenAI</h3>
+        <div class="textbox java-highlight" itemscope itemtype="http://schema.org/Course">
+            <!-- Highlighted Free Live Session Card -->
+<div class="free-session-highlight">
+    <div class="free-session-header">
+        <span class="live-badge">Comming Soon...</span>
+    </div>
+    <div class="free-session-details">
+        <span class="session-time">Stay Tuned</span><br>
+        <!--<span class="session-topic">🎯 Topic: <b>CSS Styling + JavaScript Basics</b></span>-->
+    </div>
+</div>
+            <h3 itemprop="name" style="margin-top: 10px; margin-bottom: 6px;">
+                Python with GenAI
+            </h3>
             <meta itemprop="provider" content="ScriptSprite" />
             <p itemprop="description">Master Python programming and explore the cutting-edge world of Generative AI. Work hands-on with ChatGPT, DALL·E, and LangChain to build next-generation intelligent applications.</p>
             <div class="course-details">
                 <span class="duration"><i class="fa fa-clock-o"></i> Duration: 3 months</span>
                 <span class="mode"><i class="fa fa-laptop"></i> Mode: Online/Offline</span>
-                <a href="#" class="learn-more-btn">Learn More</a>
+                <br>
+                <div class="button-group">
+    <a href="py_genAI.html" class="btn-attract">Learn More & Enroll</a>
+    <a href="#notify" class="btn-attract" onclick="openModal()">Notify Me</a>
+</div>
+
             </div>
         </div>
     </div>
@@ -279,5 +296,20 @@
 <script src="js/animate.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/owl-carousel/owl.carousel.js"></script>
+<!-- Notify Modal with Google Form -->
+<div id="notifyModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h3>🔔 Get Notified</h3>
+    <iframe id="googleForm" src="https://docs.google.com/forms/d/e/1FAIpQLSdggMSdD2LRh7Q96ZqKLJFxQ9fzeC_P-Zro86pKhLu6-wkMgQ/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0">
+      Loading…
+    </iframe>
+  </div>
+</div>
+
+<!-- Toast Message -->
+<div id="toast" class="toast">✅ Response submitted!</div>
+
+
 </body>
 </html>

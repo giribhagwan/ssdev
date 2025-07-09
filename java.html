@@ -6,8 +6,6 @@
   <title>Full Stack Java + React - 3 Month Course</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  
-  <!-- AOS Library -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
@@ -15,49 +13,57 @@
       AOS.init({ once: true });
     });
   </script>
-
   <style>
     body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+    .highlight-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 30px -10px rgba(0,0,0,0.15);
+    }
+    .gradient-btn {
+      background: linear-gradient(to right, #fbbf24, #f97316);
+      color: white;
+    }
+    .gradient-btn:hover {
+      filter: brightness(1.1);
+    }
+    .floating-cta {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 50;
+    }
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-  <!-- Header (if you add one) -->
-
   <!-- Hero Section -->
-  <section class="bg-blue-600 text-white py-12 sm:py-16 text-center" data-aos="fade-down">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
-      <h1 class="text-2xl sm:text-4xl font-bold mb-4">Java Full Stack with AI Integration</h1>
-      <p class="text-lg sm:text-xl">Java (Spring Boot) + React | Beginner-Friendly | 3-Month Program</p>
-      <p class="mt-4">🔥 Learn by building a real eCommerce Project</p>
+  <section class="bg-gradient-to-br from-blue-600 to-indigo-700 text-white py-16 text-center shadow-xl" data-aos="fade-down">
+    <div class="container mx-auto px-4 max-w-3xl">
+      <h1 class="text-4xl font-extrabold mb-4 leading-tight">Java Full Stack with AI Integration</h1>
+      <p class="text-xl">Java (Spring Boot) + React | Beginner-Friendly | 3-Month Program</p>
+      <p class="mt-4 text-lg">🔥 Learn by building a real eCommerce Project</p>
       <div class="mt-6 flex flex-col sm:flex-row justify-center gap-4">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdggMSdD2LRh7Q96ZqKLJFxQ9fzeC_P-Zro86pKhLu6-wkMgQ/viewform" class="bg-white text-blue-600 px-6 py-3 rounded-full shadow-lg font-semibold hover:bg-gray-100 transition">Enroll Now</a>
-        <a href="docs/syllabus.pdf" download class="bg-white text-blue-600 px-6 py-3 rounded-full shadow-lg font-semibold hover:bg-gray-100 transition">
-          📄 Download Syllabus PDF
-        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxHtLGE63gJKSSCXTTTr3A-zj2rgS6ZlzhD1Usoqq_ew5mJg/viewform" class="gradient-btn px-6 py-3 rounded-full shadow-lg font-semibold transition">Enroll Now</a>
+        <a href="docs/Java_syllabus.pdf" download class="gradient-btn px-6 py-3 rounded-full shadow-lg font-semibold transition">📄 Download Syllabus</a>
       </div>
     </div>
   </section>
 
   <!-- Course Overview -->
-  <section class="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12" data-aos="fade-up">
-    <h2 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">🚀 Course Overview</h2>
-    <p class="mb-4 text-base sm:text-lg">This course is designed for absolute beginners who want to become proficient in full stack
-web development using <strong>Java (Spring Boot) and React</strong>. The course will follow a practical,
-project-based approach with the final goal of building a basic eCommerce web application.
-Sessions will be conducted 3 times a week, each lasting approximately 1 hour, over a span
-of 3 months.</p>
-    <p class="text-base sm:text-lg">📅 <strong>Duration:</strong> 3 Months | 🕒 3 Sessions/Week (1 Hour Each)</p>
+  <section class="max-w-3xl mx-auto px-4 py-12" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6">🚀 Course Overview</h2>
+    <p class="mb-4 text-lg">This course is designed for absolute beginners who want to become proficient in full stack web development using <strong>Java (Spring Boot) and React</strong>. You'll learn through real-world projects culminating in a full eCommerce app.</p>
+    <p class="text-lg">📅 <strong>Duration:</strong> 3 Months | 🕒 3 Sessions/Week (1 Hour Each)</p>
   </section>
 
   <!-- Laptop Requirements -->
-  <section class="bg-white py-8 sm:py-10" data-aos="fade-up">
-    <div class="max-w-2xl mx-auto px-4 sm:px-6">
-      <h2 class="text-xl sm:text-2xl font-bold mb-4">💻 Laptop Requirements</h2>
-      <ul class="list-disc list-inside space-y-2 text-base sm:text-lg">
+  <section class="bg-white py-10" data-aos="fade-up">
+    <div class="max-w-2xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-4">💻 Laptop Requirements</h2>
+      <ul class="list-disc list-inside text-lg space-y-2">
         <li>OS: Windows 10/11</li>
         <li>RAM: Minimum 8 GB (16 GB recommended)</li>
-        <li>Processor: Intel i5 or equivalent and above</li>
+        <li>Processor: Intel i5 or equivalent</li>
         <li>Storage: 100 GB free space</li>
         <li>Software: IntelliJ IDEA, Git, MySQL, Postman, Chrome/Firefox</li>
       </ul>
@@ -65,70 +71,57 @@ of 3 months.</p>
   </section>
 
   <!-- Weekly Plan -->
-  <section class="bg-gray-100 py-8 sm:py-12" data-aos="fade-up">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6">
-      <h2 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">📚 Weekly Plan</h2>
+  <section class="bg-gray-100 py-12" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8">📚 Weekly Plan</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Week Blocks -->
-        <div class="bg-white p-6 rounded-xl shadow" data-aos="fade-up">
-          <h3 class="font-semibold text-xl mb-2">Week 1-2</h3>
+        <!-- Repeatable Card Structure -->
+        <div class="bg-white p-6 rounded-2xl shadow-md highlight-card" data-aos="zoom-in">
+          <h3 class="font-semibold text-xl mb-3">🧑‍💻 Week 1-2</h3>
           <ul class="list-disc list-inside space-y-1">
-            <li>Intro to Web Development</li>
-            <li>Basic Computer & Programming</li>
-            <li>HTML: Structure, Elements, Forms</li>
-            <li>CSS: Styling, Flexbox, Grid</li>
-            <li>JavaScript: Variables, Loops, Functions, Events</li>
+            <li>🌐 Intro to Web Development</li>
+            <li>🧱 HTML/CSS/JS Basics</li>
+            <li>🎯 Forms, Flexbox, Grid</li>
           </ul>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow" data-aos="fade-up">
-          <h3 class="font-semibold text-xl mb-2">Week 3-4</h3>
+        <div class="bg-white p-6 rounded-2xl shadow-md highlight-card" data-aos="zoom-in">
+          <h3 class="font-semibold text-xl mb-3">👨‍💻 Week 3-4</h3>
           <ul class="list-disc list-inside space-y-1">
-            <li>JavaScript: DOM Manipulation, Fetch API</li>
-            <li>Intro to Git and GitHub</li>
-            <li>Java: Variables, Data Types, Loops, Functions</li>
-            <li>Object-Oriented Programming (OOP) Basics in Java</li>
-            <li>Simple console applications in Java</li>
+            <li>🧠 JS DOM & Fetch API</li>
+            <li>🔧 Git & GitHub</li>
+            <li>☕ Core Java & OOP Basics</li>
           </ul>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow" data-aos="fade-up">
-          <h3 class="font-semibold text-xl mb-2">Week 5-6</h3>
+        <div class="bg-white p-6 rounded-2xl shadow-md highlight-card" data-aos="zoom-in">
+          <h3 class="font-semibold text-xl mb-3">📦 Week 5-6</h3>
           <ul class="list-disc list-inside space-y-1">
-            <li>Java: OOP Continued - Inheritance, Polymorphism, Interfaces</li>
-            <li>Java: Exception Handling, File I/O</li>
-            <li>Intro to Maven and IntelliJ IDEA</li>
-            <li>MySQL Basics: Tables, Queries, Joins</li>
-            <li>JDBC and MySQL Connection</li>
+            <li>🔄 Inheritance, Polymorphism</li>
+            <li>📂 File I/O, Exception Handling</li>
+            <li>🛠️ MySQL + JDBC</li>
           </ul>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow" data-aos="fade-up">
-          <h3 class="font-semibold text-xl mb-2">Week 7-8</h3>
+        <div class="bg-white p-6 rounded-2xl shadow-md highlight-card" data-aos="zoom-in">
+          <h3 class="font-semibold text-xl mb-3">🌐 Week 7-8</h3>
           <ul class="list-disc list-inside space-y-1">
-            <li>Spring Boot: Introduction and Setup</li>
-            <li>REST API Development in Spring Boot</li>
-            <li>CRUD Operations with MySQL</li>
-            <li>Postman for API Testing</li>
-            <li>Building Backend for eCommerce: Products API
-</li>
+            <li>⚙️ Spring Boot Setup</li>
+            <li>📡 REST API + Postman</li>
+            <li>🛒 eCommerce Backend</li>
           </ul>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow" data-aos="fade-up">
-          <h3 class="font-semibold text-xl mb-2">Week 9-10</h3>
+        <div class="bg-white p-6 rounded-2xl shadow-md highlight-card" data-aos="zoom-in">
+          <h3 class="font-semibold text-xl mb-3">⚛️ Week 9-10</h3>
           <ul class="list-disc list-inside space-y-1">
-            <li>React Basics: Components, Props, State</li>
-            <li>React Events, Forms, Conditional Rendering</li>
-            <li>React with API (Axios/Fetch)</li>
-            <li>Build Product Listing and Detail Page in React</li>
-            <li>Integrate Backend APIs with React</li>
+            <li>🔍 React Basics</li>
+            <li>📥 API Integration</li>
+            <li>🧩 Frontend + Backend Merge</li>
           </ul>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow" data-aos="fade-up">
-          <h3 class="font-semibold text-xl mb-2">Week 11-12</h3>
+        <div class="bg-white p-6 rounded-2xl shadow-md highlight-card" data-aos="zoom-in">
+          <h3 class="font-semibold text-xl mb-3">🚀 Week 11-12</h3>
           <ul class="list-disc list-inside space-y-1">
-            <li>User Authentication (basic JWT or session-based)</li>
-            <li>Cart Management and Checkout Flow</li>
-            <li>Free API Integration</li>
-            <li>Final Project Completion & Testing</li>
-            <li>Review, Q&A, and Final Quiz/Assessment</li>
+            <li>🔐 Auth & Checkout</li>
+            <li>🔗 Free API Integration</li>
+            <li>🏁 Final Project & Quiz</li>
           </ul>
         </div>
       </div>
@@ -136,29 +129,32 @@ of 3 months.</p>
   </section>
 
   <!-- Assessments Section -->
-  <section class="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12" data-aos="fade-up">
-    <h2 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">📝 Assessments & Quizzes</h2>
-    <ul class="list-disc list-inside space-y-2 text-base sm:text-lg">
-      <li>Short quizzes at the end of each phase (HTML/CSS/JS, Core Java, Backend, React)</li>
-      <li>Hands-on mini tasks and coding assignments</li>
-      <li>Final assessment through project demonstration</li>
-      <li>Code review and feedback sessions</li>
+  <section class="max-w-3xl mx-auto px-4 py-12" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6">📝 Assessments & Quizzes</h2>
+    <ul class="list-disc list-inside text-lg space-y-2">
+      <li>📊 Phase-wise quizzes & assignments</li>
+      <li>🛠️ Mini coding tasks and real scenarios</li>
+      <li>🚀 Final Project + Live Demo</li>
+      <li>🧐 Code Review Sessions</li>
     </ul>
   </section>
 
   <!-- Call to Action -->
-  <section class="bg-blue-600 text-white text-center py-8 sm:py-12" data-aos="fade-up">
-    <div class="container mx-auto px-4 sm:px-6 max-w-2xl">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-4">Ready to Launch Your Career?</h2>
-      <p class="mb-6 text-base sm:text-lg">Master Full Stack Development and Build Real Projects</p>
+  <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white text-center py-12" data-aos="fade-up">
+    <div class="container mx-auto px-4 max-w-2xl">
+      <h2 class="text-3xl font-bold mb-4">Ready to Launch Your Career?</h2>
+      <p class="mb-6 text-lg">Master Full Stack Development & Build Real Projects</p>
       <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdggMSdD2LRh7Q96ZqKLJFxQ9fzeC_P-Zro86pKhLu6-wkMgQ/viewform" class="bg-white text-blue-600 px-6 py-3 rounded-full shadow-lg font-semibold hover:bg-gray-100 transition">Enroll Now</a>
-        <a href="docs/syllabus.pdf" download class="bg-white text-blue-600 px-6 py-3 rounded-full shadow-lg font-semibold hover:bg-gray-100 transition">📄 Download Syllabus</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxHtLGE63gJKSSCXTTTr3A-zj2rgS6ZlzhD1Usoqq_ew5mJg/viewform" class="gradient-btn px-6 py-3 rounded-full shadow-lg font-semibold transition">Enroll Now</a>
+        <a href="docs/Java_syllabus.pdf" download class="gradient-btn px-6 py-3 rounded-full shadow-lg font-semibold transition">📄 Download Syllabus</a>
       </div>
     </div>
   </section>
 
-  <!-- Footer (optional) -->
+  <!-- Floating CTA Button -->
+  <div class="floating-cta" data-aos="fade-left">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxHtLGE63gJKSSCXTTTr3A-zj2rgS6ZlzhD1Usoqq_ew5mJg/viewform" class="gradient-btn px-5 py-3 rounded-full shadow-xl font-semibold">🚀 Enroll Now</a>
+  </div>
 
 </body>
 </html>
