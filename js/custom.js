@@ -317,3 +317,34 @@ function openModal() {
       closeModal();
     }
   };
+  AOS.init();
+
+    // Countdown Timer
+    const countdown = document.getElementById("countdown");
+    const eventDate = new Date("July 20, 2025 11:00:00").getTime();
+    const x = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+
+      if (distance <= 0) {
+        clearInterval(x);
+        countdown.innerHTML = "⏳ Workshop has started!";
+        const registerBtn = document.getElementById("register-btn");
+        if (registerBtn) registerBtn.style.display = "none";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }, 1000);
+
+    // Seat Progress Bar
+    const totalSeats = 50;
+    const filledSeats = 42;
+    const seatProgress = document.getElementById("seatProgress");
+    seatProgress.style.width = `${(filledSeats / totalSeats) * 100}%`;
+    seatProgress.textContent = `${filledSeats}/${totalSeats} Seats Filled`;
