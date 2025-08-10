@@ -3257,22 +3257,19 @@ body {
     }
 
     .cta-button {
-      padding: 15px 40px;
-      border-radius: 50px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      background: #007bff;
-      color: white;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-      transition: all 0.3s ease;
-      text-decoration: none;
-      display: inline-block;
-    }
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+  }
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
 
-    .cta-button:hover {
-      background: #0056b3;
-    }
 
     @media(max-width: 600px) {
       .side-ribbon {
